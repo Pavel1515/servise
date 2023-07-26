@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+h2 {
+  margin: 0;
+}
+.info {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.logo img {
+  width: 140px;
+}
+.city {
+  font-weight: 700;
+  font-size: 22px;
+}
+.phone a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  color: black;
+}
+.menu {
+  background-color: #f2f2f2;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  height: 37px;
+}
+.golovna {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  min-height: 400px;
+  background-color: #023e7f;
+}
+.background {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.golovna h1 {
+  padding-top: 60px;
+  color: white;
+  max-width: 40%;
+}
+.services {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+}
+.pocinim {
+  width: 45%;
+  background-color: #fec12a;
+  font-weight: 700;
+  color: #212529;
+  padding: 10px 20px;
+  font-size: 22px;
+  border: none;
+}
+.list_servise {
+  margin-top: 50px;
+  list-style-type: none;
+}
+.list_servise li {
+  gap: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+.list_servise li img{
+  width: 60px;
+
+}
+.list_servise li p{
+  padding-top: 18px;
+}

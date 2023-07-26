@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'pedant_01';
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+    src:  url('./pedant-01.eot') format('embedded-opentype'),
+    url('./pedant-01.ttf') format('truetype'),
+    url('./pedant-01.woff') format('woff'),
+    url('./pedant-01.svg') format('svg');
+}
