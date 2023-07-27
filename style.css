@@ -82,10 +82,59 @@ h2 {
   font-size: 22px;
   font-weight: 700;
 }
-.list_servise li img{
+.list_servise li img {
   width: 60px;
-
 }
-.list_servise li p{
+.list_servise li p {
   padding-top: 18px;
+}
+.uznat-cenu {
+  padding: 10px;
+  background-color: #fec12a;
+  font-weight: 700;
+  color: #212529;
+  font-size: 22px;
+  border: none;
+  margin-bottom: 50px;
+}
+.uznat-cenu img {
+  width: 40px;
+}
+.first-screen-bottom {
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.1);
+}
+.achievement {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.achievement li {
+  display: flex;
+  align-items: center;
+  text-align: initial;
+}
+.achievement span {
+  font-size: 2.5rem;
+  width: auto;
+  text-align: left;
+  display: initial;
+  color: #023e7f;
+}
+.arrow {
+  display: block;
+  width: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  animation: arrows 1s infinite;
+}
+@keyframes arrows {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
