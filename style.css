@@ -16,6 +16,7 @@ h2 {
 }
 .logo img {
   width: 140px;
+  object-fit: cover;
 }
 .city {
   font-weight: 700;
@@ -127,6 +128,159 @@ h2 {
   margin-top: 20px;
   animation: arrows 1s infinite;
 }
+.caunts {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #d9d5dd;
+  width: 130px;
+  border-radius: 20px;
+}
+.caunts span {
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 50%;
+  display: block;
+  background: #fec12a;
+  width: 20px;
+  height: w0px;
+}
+.text-answer {
+  color: #023e7f;
+  font-weight: 700;
+  font-size: 22px;
+  max-width: 50%;
+  margin-bottom: 20px;
+}
+.social {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+.social-item {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.social-item img {
+  width: 35px;
+}
+.social-item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-maps_button {
+  background-color: rgb(58, 171, 88);
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #023e7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.and{
+  padding-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #023e7f;
+  font-weight: 700;
+  font-size: 22px;
+}
+.phone-img {
+  margin-right: 40px;
+  background: #28a745;
+}
+.telegram {
+  background-color: #33a9e3;
+}
+.viber {
+  background-color: #59267c;
+}
+.map iframe {
+  width: 100%;
+  margin-top: 30px;
+  height: 400px;
+}
+.iphone-bg {
+  max-width: 100%;
+  object-fit: fill;
+}
+.prichina-item.accordion {
+  margin-top: 140px;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.servis-centr .swiper-button-next,
+.servis-centr .swiper-button-prev {
+  display: none;
+}
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+}
+.header-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body-reviews {
+  height: 120px;
+}
+.botom-reviews {
+  display: flex;
+  justify-content: space-between;
+}
+.botom-reviews ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+.botom-reviews ul img {
+  width: 20px;
+}
+.heart {
+  width: 25px;
+}
+.application form {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 30px;
+}
+.application form input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 20px;
+  width: 260px;
+}
+.application form button {
+  border-radius: 20px;
+  width: 260px;
+  padding: 20px;
+  color: #212529;
+  background-color: #fec12a;  
+  border: none;
+}
+footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #023e7f;
+  color: #fff;
+}
+
 @keyframes arrows {
   0% {
     transform: translateY(0);
