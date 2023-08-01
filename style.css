@@ -226,6 +226,7 @@ h2 {
   display: none;
 }
 .reviews-item {
+  height: max-content;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -238,6 +239,7 @@ h2 {
   align-items: center;
 }
 .body-reviews {
+  overflow: hidden;
   height: 120px;
 }
 .botom-reviews {
