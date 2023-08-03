@@ -8,15 +8,19 @@ h2 {
   margin: 0;
 }
 .info {
+  max-height: 60px;
   padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
 }
+.logo {
+  height: 60px;
+}
 .logo img {
-  width: 140px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 .city {
   font-weight: 700;
@@ -31,7 +35,7 @@ h2 {
 .menu {
   background-color: #f2f2f2;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  height: 37px;
+  height: 47px;
 }
 .golovna {
   margin: 0;
@@ -90,6 +94,8 @@ h2 {
   padding-top: 18px;
 }
 .uznat-cenu {
+  border-radius: 15px;
+  box-shadow: 0 0.25rem 0 0 #9b6835;
   padding: 10px;
   background-color: #fec12a;
   font-weight: 700;
@@ -106,8 +112,6 @@ h2 {
 }
 .achievement {
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
 }
 .achievement li {
   display: flex;
@@ -284,6 +288,129 @@ footer {
   padding-bottom: 60px;
   background: #023e7f;
   color: #fff;
+}
+.mobile-social-buttons {
+  display: none;
+}
+@media (max-width: 991px) {
+  .menu {
+    height: auto;
+  }
+  .city {
+    display: none;
+  }
+  header .phone a {
+    font-size: 18px;
+  }
+  .golovna {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .golovna h1 {
+    margin-top: 0;
+    padding-top: 10px;
+    max-width: 100%;
+  }
+  .services {
+    font-size: 14px;
+  }
+  .list_servise {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .list_servise li img {
+    width: 34px;
+  }
+  .list_servise li {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .uznat-cenu {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .background {
+    min-height: 300px;
+    width: 100%;
+    position: relative;
+  }
+  .pocinim {
+    width: 100%;
+  }
+  .prichina-item h2 {
+    text-align: center;
+  }
+  .prichina-item p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .caunts {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .social {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .and {
+    width: 100%;
+    text-align: center;
+  }
+  .item-maps_button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .application form {
+    display: flex;
+    flex-direction: column;
+  }
+  .application form input {
+    width: 100%;
+  }
+  .application form button {
+    width: 100%;
+  }
+  .accordion {
+    margin-top: 20px;
+  }
+  .galery h2 {
+    text-align: center;
+  }
+  .application h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .mobile-social-buttons {
+    border-radius: 25px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    bottom: 2px;
+    z-index: 10;
+    left: 0;
+  }
+  .mobile-social-buttons .col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-social-buttons img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .viber-buttons{
+    background-color:#59267c;
+  }
+  .telegram-buttons{
+    background-color: #33a9e3;
+  }
+  .phone-buttons{
+    background-color:#28a745;
+  }
 }
 
 @keyframes arrows {
