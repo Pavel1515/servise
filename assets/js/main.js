@@ -1,8 +1,8 @@
 const swiper = new Swiper(".servis-centr", {
   loop: true,
   centerInsufficientSlides: true,
-  slidesPerView: 3,
-  spaceBetween: 3,
+  slidesPerView: 1,
+  spaceBetween: 0,
   autoplay: {
     delay: 3000,
   },
@@ -11,6 +11,12 @@ const swiper = new Swiper(".servis-centr", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    921: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
 });
 const answer = new Swiper(".reviews", {
   loop: true,
@@ -18,7 +24,7 @@ const answer = new Swiper(".reviews", {
   slidesPerView: 1,
   spaceBetween: 1,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
   },
   speed: 400,
   navigation: {
