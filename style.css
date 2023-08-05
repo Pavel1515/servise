@@ -333,6 +333,13 @@ footer {
   text-decoration: none;
   color: white;
 }
+.modal {
+  --bs-modal-border-radius: none !important;
+}
+.modal-dialog {
+  max-width: 700px;
+  margin-top: 105px;
+}
 .modal form {
   margin-bottom: 40px;
   display: flex;
@@ -355,7 +362,20 @@ footer {
   background-color: #fec12a;
   border: none;
 }
+.city-mobyle {
+  display: none;
+}
 @media (max-width: 991px) {
+  .city-mobyle {
+    display: block;
+  }
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  button:not(:disabled) {
+    display: flex;
+    justify-content: flex-end;
+  }
   .menu {
     height: auto;
   }
@@ -463,14 +483,20 @@ footer {
   }
 
   .mobile-social-buttons {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
     border-radius: 25px;
     position: fixed;
-    width: 100%;
+    width: calc(100% - 10px);
     display: flex;
-    bottom: 2px;
+    bottom: 0px;
     z-index: 10;
     left: 0;
   }
+
   .mobile-social-buttons .col-4 {
     display: flex;
     justify-content: center;
