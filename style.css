@@ -47,7 +47,7 @@ h2 {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   height: 47px;
 }
-.golovna {
+.mains {
   margin: 0;
   width: 100%;
   position: relative;
@@ -64,7 +64,7 @@ h2 {
   background-position: center;
   background-size: cover;
 }
-.golovna h1 {
+.mains h2 {
   padding-top: 60px;
   color: white;
   max-width: 40%;
@@ -226,7 +226,7 @@ h2 {
   max-width: 100%;
   object-fit: fill;
 }
-.prichina-item.accordion {
+.reason-item.accordion {
   margin-top: 140px;
 }
 .accordion-button:not(.collapsed) {
@@ -366,11 +366,11 @@ footer {
     font-size: 18px;
   }
 
-  .golovna {
+  .mains {
     display: flex;
     flex-direction: column-reverse;
   }
-  .golovna h1 {
+  .mains h2 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -416,10 +416,10 @@ footer {
   .pocinim {
     width: 100%;
   }
-  .prichina-item h2 {
+  .reason-item h2 {
     text-align: center;
   }
-  .prichina-item p {
+  .reason-item p {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -437,6 +437,7 @@ footer {
     text-align: center;
   }
   .item-maps_button {
+    cursor: pointer;
     margin-top: 20px;
     width: 100%;
   }
