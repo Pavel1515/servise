@@ -23,12 +23,44 @@
   </head>
 
   <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form action="">
+              <h2 class="text-center">Заявка на дзвінок</h2>
+              <input type="text" placeholder="Ваше Імя" />
+              <input type="text" placeholder="+38063-***-**-**" />
+              <button data-bs-dismiss="modal">Записатися на ремонт</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
       <div class="container">
         <div class="info">
           <div class="logo">
             <a href="#">
-              <img src="./assets/img/logo.svg" alt="logo" loading="lazy" />
+              <img
+                loading="lazy"
+                src="./assets/img/logo.svg"
+                alt="logo"
+                loading="lazy"
+              />
             </a>
           </div>
           <div class="city">Київ <span>Михайла Ломоносова 50/2</span></div>
@@ -94,23 +126,39 @@
             data-bs-toggle="modal"
             class="pocinim"
           >
-          Полагодимо при вас за 20 хвилин
+            Полагодимо при вас за 20 хвилин
           </button>
           <ul class="list_servise">
             <li>
-              <img src="./assets/img/icons8-stopwatch-64.png" alt="" />
+              <img
+                loading="lazy"
+                src="./assets/img/icons8-stopwatch-64.png"
+                alt=""
+              />
               <p>Ремонт за 15-30 хвилин від 490 грн.</p>
             </li>
             <li>
-              <img src="./assets/img/icons8-stopwatch-64.png" alt="" />
+              <img
+                loading="lazy"
+                src="./assets/img/icons8-stopwatch-64.png"
+                alt=""
+              />
               <p>Ремонт за 15-30 хвилин від 490 грн.</p>
             </li>
             <li>
-              <img src="./assets/img/icons8-stopwatch-64.png" alt="" />
+              <img
+                loading="lazy"
+                src="./assets/img/icons8-stopwatch-64.png"
+                alt=""
+              />
               <p>Ремонт за 15-30 хвилин від 490 грн.</p>
             </li>
             <li>
-              <img src="./assets/img/icons8-stopwatch-64.png" alt="" />
+              <img
+                loading="lazy"
+                src="./assets/img/icons8-stopwatch-64.png"
+                alt=""
+              />
               <p>Ремонт за 15-30 хвилин від 490 грн..</p>
             </li>
           </ul>
@@ -119,7 +167,11 @@
             data-bs-target="#exampleModal"
             data-bs-toggle="modal"
           >
-            <img src="./assets/img/icons8-calc-64.png" alt="" />Дізнатись ціну
+            <img
+              loading="lazy"
+              src="./assets/img/icons8-calc-64.png"
+              alt=""
+            />Дізнатись ціну
           </button>
         </div>
       </section>
@@ -158,6 +210,7 @@
             чому варто звернутися саме до нас
           </h2>
           <img
+            loading="lazy"
             class="arrow mb-5"
             src="./assets/img/icons8-arrow-50.png"
             alt=""
@@ -172,33 +225,49 @@
             <ul class="social">
               <li class="phone-img social-item">
                 <a href=""
-                  ><img src="./assets/img/icons8-phone-50.png" alt=""
+                  ><img
+                    loading="lazy"
+                    src="./assets/img/icons8-phone-50.png"
+                    alt=""
                 /></a>
               </li>
               <li class="telegram social-item">
                 <a href=""
-                  ><img src="./assets/img/icons8-telegram-48.png" alt=""
+                  ><img
+                    loading="lazy"
+                    src="./assets/img/icons8-telegram-48.png"
+                    alt=""
                 /></a>
               </li>
               <li class="viber social-item">
                 <a href=""
-                  ><img src="./assets/img/icons8-viber-48.png" alt=""
+                  ><img
+                    loading="lazy"
+                    src="./assets/img/icons8-viber-48.png"
+                    alt=""
                 /></a>
               </li>
               <li class="and">или</li>
               <li class="item-maps_button">
-                <img src="./assets/img/google-map-i.png" alt="" />Вибрати зручну адресу
+                <a href="#map">
+                  <img
+                    loading="lazy"
+                    src="./assets/img/google-map-i.png"
+                    alt=""
+                  />Вибрати зручну адресу
+                </a>
               </li>
             </ul>
           </div>
           <div class="reason-item mt-5">
             <div class="caunts"><span>2</span> причина</div>
             <h3 class="mt-3">Зручне розташування сервісів</h3>
-            <div class="map">
+            <div  class="map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5393978.731492624!2d28.39441818726539!3d48.69059600178751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8757838fbd1%3A0x2a281b79b17053c3!2z0J_QsNGA0Log0KTQtdC-0YTQsNC90ZbRjw!5e0!3m2!1suk!2sua!4v1690832169585!5m2!1suk!2sua"
-                width="800"
-                height="600"
+              id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.9680408615186!2d30.462018361381404!3d50.38579431148406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9248a77dc0f%3A0xd080be58ea7a5981!2zVmlwcmVtb250IC0g0KHQtdGA0LLRltGB0L3QuNC5INGG0LXQvdGC0YAgQXBwbGUg0Lgg0LTRgC4!5e0!3m2!1suk!2sua!4v1691358826419!5m2!1suk!2sua"
+                width="600"
+                height="450"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -312,6 +381,7 @@
                 </div>
               </div>
               <img
+                loading="lazy"
                 src="./assets/img/iphone-bg.png"
                 class="col-lg-6 order-1 iphone-bg"
                 alt=""
@@ -326,60 +396,70 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-18.jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-19 (2).jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-20.jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-21.jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-22.jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-23.jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-24 (2).jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-25 (2).jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-26 (2).jpg"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide servis-centr-item">
                   <img
+                    loading="lazy"
                     src="./assets/img/servise-centr/photo_2023-08-03_18-06-30.jpg"
                     alt=""
                   />
@@ -400,7 +480,11 @@
                 <div class="swiper-slide reviews-item">
                   <div class="header-reviews">
                     <h2>Павло</h2>
-                    <img src="./assets/img/google-map-i.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="./assets/img/google-map-i.png"
+                      alt=""
+                    />
                   </div>
                   <div class="body-reviews">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -411,19 +495,39 @@
                   <div class="botom-reviews">
                     <ul>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                     </ul>
 
@@ -433,7 +537,11 @@
                 <div class="swiper-slide reviews-item">
                   <div class="header-reviews">
                     <h2>Павло</h2>
-                    <img src="./assets/img/google-map-i.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="./assets/img/google-map-i.png"
+                      alt=""
+                    />
                   </div>
                   <div class="body-reviews">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -444,19 +552,39 @@
                   <div class="botom-reviews">
                     <ul>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                     </ul>
 
@@ -466,7 +594,11 @@
                 <div class="swiper-slide reviews-item">
                   <div class="header-reviews">
                     <h2>Павло</h2>
-                    <img src="./assets/img/google-map-i.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="./assets/img/google-map-i.png"
+                      alt=""
+                    />
                   </div>
                   <div class="body-reviews">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -477,19 +609,39 @@
                   <div class="botom-reviews">
                     <ul>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                     </ul>
 
@@ -499,7 +651,11 @@
                 <div class="swiper-slide reviews-item">
                   <div class="header-reviews">
                     <h2>Павло</h2>
-                    <img src="./assets/img/google-map-i.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="./assets/img/google-map-i.png"
+                      alt=""
+                    />
                   </div>
                   <div class="body-reviews">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -510,19 +666,39 @@
                   <div class="botom-reviews">
                     <ul>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                     </ul>
 
@@ -532,7 +708,11 @@
                 <div class="swiper-slide reviews-item">
                   <div class="header-reviews">
                     <h2>Павло</h2>
-                    <img src="./assets/img/google-map-i.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="./assets/img/google-map-i.png"
+                      alt=""
+                    />
                   </div>
                   <div class="body-reviews">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -543,19 +723,39 @@
                   <div class="botom-reviews">
                     <ul>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                       <li>
-                        <img src="./assets/img/icons8-star-48.png" alt="" />
+                        <img
+                          loading="lazy"
+                          src="./assets/img/icons8-star-48.png"
+                          alt=""
+                        />
                       </li>
                     </ul>
 
@@ -574,7 +774,7 @@
         <div class="container">
           <h2 class="mt-5">
             Ви точно залишитеся задоволені
-            <img src="./assets/img/icons8-heart-48.png" alt="" />
+            <img loading="lazy" src="./assets/img/icons8-heart-48.png" alt="" />
           </h2>
           <p>Галерея</p>
         </div>
@@ -583,13 +783,15 @@
         <div class="container">
           <h2>Відремонтуйте Ваш пристрій сьогодні</h2>
           <p>
-            Час ремонту триватиме лише 20 хвилин. Ми передзвонимо та запишемо Вас на
-            зручний для Вас час.
+            Час ремонту триватиме лише 20 хвилин. Ми передзвонимо та запишемо
+            Вас на зручний для Вас час.
           </p>
           <form class="mt-5" action="">
             <input type="text" placeholder="Ваше Імя" />
             <input type="text" placeholder="+38063-***-**-**" />
-            <button class="d-flex justify-content-center">Записатися на ремонт</button>
+            <button class="d-flex justify-content-center">
+              Записатися на ремонт
+            </button>
           </form>
         </div>
       </section>
@@ -599,7 +801,7 @@
         <div class="row">
           <div class="col-4">
             <div class="logos">
-              <img src="./assets/img/logo.svg" alt="" />
+              <img loading="lazy" src="./assets/img/logo.svg" alt="" />
             </div>
           </div>
           <div class="col-8">
@@ -610,10 +812,19 @@
               <ul>
                 <li>
                   <a href=""
-                    ><img src="./assets/img/icons/telegram-white.png" alt=""
+                    ><img
+                      loading="lazy"
+                      src="./assets/img/icons/telegram-white.png"
+                      alt=""
                   /></a>
                 </li>
-                <li><img src="./assets/img/icons/viber-white.png" alt="" /></li>
+                <li>
+                  <img
+                    loading="lazy"
+                    src="./assets/img/icons/viber-white.png"
+                    alt=""
+                  />
+                </li>
               </ul>
               <p>Київ,Михайла Ломоносова 50/2</p>
             </div>
@@ -622,39 +833,16 @@
       </div>
     </footer>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <form action="">
-              <h2 class="text-center">Заявка на дзвінок</h2>
-              <input type="text" placeholder="Ваше Імя" />
-              <input type="text" placeholder="+38063-***-**-**" />
-              <button data-bs-dismiss="modal">Записатися на ремонт</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="mobile-social-buttons row">
-     
-        <a href="" class="viber-buttons col-4"
-          ><img src="./assets/img/icons8-viber-48.png" alt=""
-        /></a>
-        <a href="" class="telegram-buttons col-4"
-          ><img src="./assets/img/icons8-telegram-48.png" alt=""
-        /></a>
-        <a href="" class="phone-buttons col-4"
-          ><img src="./assets/img/icons8-phone-50.png" alt=""
-        /></a>
-   
+      <a href="" class="viber-buttons col-4"
+        ><img loading="lazy" src="./assets/img/icons8-viber-48.png" alt=""
+      /></a>
+      <a href="" class="telegram-buttons col-4"
+        ><img loading="lazy" src="./assets/img/icons8-telegram-48.png" alt=""
+      /></a>
+      <a href="" class="phone-buttons col-4"
+        ><img loading="lazy" src="./assets/img/icons8-phone-50.png" alt=""
+      /></a>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
