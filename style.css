@@ -90,15 +90,19 @@ h2 {
   object-fit: fill;
 }
 .logo img {
+  opacity: 0;
   height: 100%;
   object-fit: contain;
+  animation-duration: 3s;
 }
 .city {
+  opacity: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   font-weight: 700;
   font-size: 22px;
+  animation-delay: 3s;
 }
 .city span {
   font-weight: 400;
@@ -603,4 +607,7 @@ footer {
   100% {
     transform: translateY(0);
   }
+}
+.animate {
+  animation: delays forwards;
 }

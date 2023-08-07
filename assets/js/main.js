@@ -3,6 +3,13 @@ window.onload = function () {
   window.setTimeout(function () {
     document.body.classList.add('loaded');
     document.body.classList.remove('loaded_hiding');
+    if(document.querySelector('#logo-golovne')){
+      document.querySelector('#logo-golovne').classList.add('animate')
+    }
+    if(document.querySelector('.city')){
+      document.querySelector('.city').classList.add('animate')
+    }
+
   }, 500);
 }
 
